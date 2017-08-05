@@ -21,13 +21,13 @@ char* addBinary(char* a, char* b) {
     k = lenr-1;
     for(j--,i--;i>=0 && j>=0;i--,j--){
 		s = a[i]-'0'; t = b[j]-'0';
-		res[k--] = (s^t^bit)+'0';
-		bit = ((s&t) + (s&bit) + (t&bit))>0?1:0;
+		res[k--] = (s^t^bit)+'0'; //本位 
+		bit = ((s&t) + (s&bit) + (t&bit))>0?1:0; //进位 
     }
     if( i >= 0 ){
 		while( i>=0 ){
 			s = a[i]-'0'; 
-			res[k--] = (s^bit)+'0';
+			res[k--] = (s^bit)+'0'; //半加器 
 			bit = s&bit;
 			i--;
 		}
