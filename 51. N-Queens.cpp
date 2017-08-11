@@ -96,7 +96,7 @@ void helper(int n, int row, int* col, int** chess, int* size, int* ans, char*** 
 
 int main()
 {
-	int n = 8;
+	int n = 3;
 	int size;
 	char ***res;
 	res = solveNQueens(n, &size);

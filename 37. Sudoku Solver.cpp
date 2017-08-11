@@ -98,15 +98,15 @@ int main()
 		}
 		board[i][9] = '\0';
 	}
-	board[0][0] = '5'; board[0][1] = '3'; board[0][4] = '7';
-	board[1][0] = '6'; board[1][3] = '1'; board[1][4] = '9'; board[1][5] = '5';
-	board[2][1] = '9'; board[2][2] = '8'; board[2][7] = '6';
-	board[3][0] = '8'; board[3][4] = '6'; board[3][8] = '3';
-	board[4][0] = '4'; board[4][3] = '8'; board[4][5] = '3'; board[4][8] = '1';
-	board[5][0] = '7'; board[5][4] = '2'; board[5][8] = '6';
-	board[6][1] = '6'; board[6][6] = '2'; board[6][7] = '8';
-	board[7][3] = '4'; board[7][4] = '1'; board[7][5] = '9'; board[7][8] = '5';
-	board[8][4] = '8'; board[8][7] = '7'; board[8][8] = '9';
+	board[0][0] = '.'; board[0][1] = '3'; board[0][5] = '7';
+	board[1][1] = '5'; board[1][3] = '4'; board[1][5] = '2'; board[1][7] = '9';board[1][8] = '8';
+	board[2][2] = '2'; board[2][6] = '5';
+	board[3][0] = '2'; board[3][1] = '9'; board[3][7] = '4';
+	board[4][4] = '9'; 
+	board[5][1] = '7'; board[5][7] = '6'; board[5][8] = '2';
+	board[6][2] = '3'; board[6][6] = '7'; 
+	board[7][0] = '1'; board[7][1] = '2'; board[7][3] = '5'; board[7][5] = '6';board[7][7] = '3';
+	board[8][3] = '8'; board[8][7] = '2'; 
 	solveSudoku(board, 9, 9);
 	for (int i = 0; i < 9; i++) {
 		printf("%s\n", board[i]);
